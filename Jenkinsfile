@@ -29,7 +29,7 @@ pipeline {
                 script{
                     sshagent(['cb6a638a-8c25-4c8e-9abe-f460921fd41b']) {  
                      sh '''
-                           ssh -o StrictHostKeyChecking=no ubuntu@44.202.33.169<<EOF                         // Add your liveserver IP 
+                           ssh -o StrictHostKeyChecking=no ubuntu@44.202.33.169<<EOF     
                             cd /home/ubuntu/nodeapp/
                             git pull https://github.com/NikhilGharat96/Nodejs_app.git
                             npm install
